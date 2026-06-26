@@ -125,7 +125,9 @@ Menggunakan `GROUP BY` dan `HAVING` untuk menghasilkan informasi ringkasan, sepe
 |------|--------|
 | `view_laporan_transaksi` | Menampilkan informasi transaksi secara lengkap dengan menggabungkan data pelanggan, kendaraan, mekanik, pembayaran, dan total biaya. |
 | `view_stok_sparepart` | Menampilkan daftar sparepart beserta supplier, harga, dan stok yang tersedia. |
+
 Contoh penggunaan:
+
 ```sql
 SELECT * FROM view_laporan_transaksi;
 SELECT * FROM view_stok_sparepart;
@@ -135,7 +137,9 @@ SELECT * FROM view_stok_sparepart;
 | Procedure | Parameter | Fungsi |
 |-----------|-----------|--------|
 | `detail_transaksi` | `IN p_id_transaksi VARCHAR(10)` | Menampilkan informasi lengkap suatu transaksi servis berdasarkan ID transaksi. |
+
 Contoh pemanggilan:
+
 ```sql
 CALL detail_transaksi('TR001');
 ```
