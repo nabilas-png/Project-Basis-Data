@@ -26,15 +26,6 @@ Kombinasi objek-objek tersebut mendukung efisiensi, keamanan, dan integritas dat
 5. Eunike Prasetyaning Yuniawan (K1D024026)
 
 # Cara menjalankan script
-# PERANCANGAN DAN IMPLEMENTASI BASIS DATA RELASIONAL PADA SISTEM INFORMASI BENGKEL KENDARAAN 
-# Deskripsi project
-# Anggota tim
-1. Verdina Tista Pudyawardhana (K1D024002)
-2. Nabila Dwi Setiawati (K1D024005)
-3. Faza Hamdi Yogaswara (K1D024011)
-4. Intan Vania Saraswati(K1D024014)
-5. Eunike Prasetyaning Yuniawan (K1D024026)
-# Cara menjalankan script
 ### Persiapan
 Sebelum menjalankan project, pastikan:
 - MySQL Server telah aktif.
