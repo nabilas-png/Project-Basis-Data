@@ -95,3 +95,74 @@ sistem-informasi-bengkel-kendaraan/
 ├── PPT_Perancangan dan Implementasi Basis Data Relasional Pada Sistem Informasi Bengkel Kendaraan  #Powerpoint
 └── README.md          # Dokumentasi project
 ```
+
+# Penjelasan Query & Object SQL
+### 03_query.sql — Query SELECT
+#### Query Sederhana
+| No | Fungsi |
+|----|--------|
+| 1 | Menampilkan data transaksi servis dengan status tertentu. |
+| 2 | Menampilkan data pembayaran berdasarkan metode pembayaran dan total biaya. |
+| 3 | Menampilkan jasa servis dengan harga tertentu yang diurutkan berdasarkan harga. |
+#### Query JOIN
+| No | Fungsi |
+|----|--------|
+| 1 | Menampilkan informasi transaksi beserta pelanggan, kendaraan, dan mekanik. |
+| 2 | Menampilkan detail penggunaan jasa pada setiap transaksi servis. |
+| 3 | Menampilkan detail penggunaan sparepart beserta supplier. |
+| 4 | Menampilkan data pembayaran yang dikaitkan dengan transaksi dan pelanggan. |
+#### Query Subquery dan CTE
+| Jenis | Fungsi |
+|-------|--------|
+| Subquery | Menampilkan data berdasarkan hasil query lain, misalnya transaksi dengan total biaya di atas rata-rata. |
+| CTE | Menyederhanakan query kompleks, seperti menghitung jumlah transaksi atau total pendapatan setiap mekanik. |
+#### Query Agregasi
+Menggunakan `GROUP BY` dan `HAVING` untuk menghasilkan informasi ringkasan, seperti total transaksi, jumlah pelanggan, atau pendapatan berdasarkan mekanik maupun periode tertentu.
+---
+### 04_view.sql — VIEW
+| View | Fungsi |
+|------|--------|
+| `view_laporan_transaksi` | Menampilkan informasi transaksi secara lengkap dengan menggabungkan data pelanggan, kendaraan, mekanik, pembayaran, dan total biaya. |
+| `view_stok_sparepart` | Menampilkan daftar sparepart beserta supplier, harga, dan stok yang tersedia. |
+Contoh penggunaan:
+```sql
+SELECT * FROM view_laporan_transaksi;
+SELECT * FROM view_stok_sparepart;
+```
+---
+### 05_procedure.sql — Stored Procedure
+| Procedure | Parameter | Fungsi |
+|-----------|-----------|--------|
+| `detail_transaksi` | `IN p_id_transaksi VARCHAR(10)` | Menampilkan informasi lengkap suatu transaksi servis berdasarkan ID transaksi. |
+Contoh pemanggilan:
+```sql
+CALL detail_transaksi('TR001');
+```
+---
+
+### 06_trigger.sql — Trigger
+
+Trigger digunakan untuk menjalankan proses secara otomatis ketika terjadi perubahan data pada tabel tertentu.
+
+| Trigger | Event | Fungsi |
+|---------|-------|--------|
+| `tr_update_total_transaksi` | AFTER INSERT | Memperbarui total biaya transaksi setelah data detail jasa atau sparepart ditambahkan. |
+| `tr_update_stok_sparepart` | AFTER INSERT | Mengurangi stok sparepart secara otomatis sesuai jumlah yang digunakan pada transaksi. |
+| `tr_audit_transaksi` | AFTER UPDATE | Mencatat perubahan data transaksi ke tabel log apabila terjadi pembaruan data. |
+
+---
+
+### 07_function.sql — Function
+
+| Function | Return | Fungsi |
+|----------|--------|--------|
+| `fn_total_sparepart_transaksi` | `INT` | Menghitung total biaya sparepart yang digunakan dalam suatu transaksi. |
+| `fn_total_jasa_transaksi` | `INT` | Menghitung total biaya jasa servis pada suatu transaksi. |
+
+Contoh penggunaan:
+
+```sql
+SELECT fn_total_sparepart_transaksi('TR001');
+
+SELECT fn_total_jasa_transaksi('TR001');
+```
