@@ -76,8 +76,6 @@ CALL detail_transaksi('TR001');
 SELECT fn_total_sparepart_transaksi('TR001');
 ```
 Apabila seluruh perintah di atas dapat dijalankan tanpa error dan menghasilkan output sesuai data yang telah dimasukkan, maka implementasi database telah berhasil dilakukan.
-# ERD
-# Struktur folder
 
 # ERD
 <img width="1842" height="1162" alt="Untitled Diagram drawio (1)" src="https://github.com/user-attachments/assets/8629010e-f771-4805-8884-a00ae032dd9f" />
