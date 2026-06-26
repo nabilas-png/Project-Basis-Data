@@ -118,6 +118,7 @@ sistem-informasi-bengkel-kendaraan/
 | CTE | Menyederhanakan query kompleks, seperti menghitung jumlah transaksi atau total pendapatan setiap mekanik. |
 #### Query Agregasi
 Menggunakan `GROUP BY` dan `HAVING` untuk menghasilkan informasi ringkasan, seperti total transaksi, jumlah pelanggan, atau pendapatan berdasarkan mekanik maupun periode tertentu.
+
 ---
 ### 04_view.sql — VIEW
 | View | Fungsi |
