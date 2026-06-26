@@ -15,6 +15,7 @@ Sistem ini dilengkapi dengan objek-objek SQL lanjutan seperti:
 - STORED PROCEDURE — `sp_riwayat_pelanggan` untuk menampilkan riwayat transaksi berdasarkan ID pelanggan
 - TRIGGER — `before_update_ulasan` untuk memvalidasi rating ulasan agar selalu berada pada rentang 1-5
 - FUNCTION — `fn_total_transaksi`, `fn_total_sparepart_transaksi`, `fn_total_jasa_transaksi`, dan `fn_rata_rata_ulasan_mekanik` untuk menghitung total biaya transaksi serta rata-rata rating performa mekanik
+
 Kombinasi objek-objek tersebut mendukung efisiensi, keamanan, dan integritas data secara menyeluruh dalam pengelolaan operasional bengkel, mulai dari pendaftaran servis hingga evaluasi kinerja mekanik berdasarkan ulasan pelanggan.
 
 # Anggota tim
