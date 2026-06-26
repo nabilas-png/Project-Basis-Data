@@ -26,6 +26,7 @@ Kombinasi objek-objek tersebut mendukung efisiensi, keamanan, dan integritas dat
 5. Eunike Prasetyaning Yuniawan (K1D024026)
 # Cara menjalankan script
 # ERD
+<img width="1842" height="1162" alt="Untitled Diagram drawio (1)" src="https://github.com/user-attachments/assets/8629010e-f771-4805-8884-a00ae032dd9f" />
 # Struktur folder
 ```text
 sistem-informasi-bengkel-kendaraan/
