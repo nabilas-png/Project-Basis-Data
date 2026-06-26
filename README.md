@@ -27,3 +27,17 @@ Kombinasi objek-objek tersebut mendukung efisiensi, keamanan, dan integritas dat
 # Cara menjalankan script
 # ERD
 # Struktur folder
+```text
+sistem-informasi-bengkel-kendaraan/
+│
+├── 01_DDL.sql         # DDL: pembuatan database, tabel, constraint, dan index
+├── 02_DML.sql         # DML: data dummy untuk seluruh tabel
+├── 03_QUERY.sql       # Query SELECT bertingkat (JOIN, subquery, CTE, agregat)
+├── 04_VIEW.sql        # VIEW: vw_riwayat_servis, vw_stok_sparepart
+├── 05_procedure.sql   # STORED PROCEDURE: sp_riwayat_pelanggan
+├── 06_trigger.sql     # TRIGGER: ulasan
+├── 07_function.sql    # FUNCTION: fn_total_transaksi, fn_total_sparepart_transaksi, fn_total_jasa_transaksi, dan fn_rata_rata_ulasan_mekanik
+├── ERD_drawio.png     # Entity Relationship Diagram
+├── PPT_Perancangan dan Implementasi Basis Data Relasional Pada Sistem Informasi Bengkel Kendaraan  #Powerpoint
+└── README.md          # Dokumentasi project
+```
